@@ -58,7 +58,7 @@ var help =  document.getElementById("help1");
         document.getElementById("help123").style.display = 'none';
     }
     function OpenHelp(){
-        document.getElementById("help123").style.display = '';
+        document.getElementById("help123").style.display = 'block';
     }
 
     function start(){
@@ -1215,17 +1215,17 @@ var help =  document.getElementById("help1");
         function UI(){
             UIswitch = !UIswitch;
             if (UIswitch) {
-                document.getElementById('A').className = "c3";
+                document.getElementById('A').className = "floorChoice3 loucengUI";
                 document.getElementById("A").style.background ='#525252';
-                document.getElementById("2f").style.display = "";
-                document.getElementById("3f").style.display = "";
-                document.getElementById("4f").style.display = "";
-                document.getElementById("5f").style.display = "";
-                document.getElementById("all").style.display = "";
+                document.getElementById("2f").style.display = "block";
+                document.getElementById("3f").style.display = "block";
+                document.getElementById("4f").style.display = "block";
+                document.getElementById("5f").style.display = "block";
+                document.getElementById("all").style.display = "block";
                 document.getElementById("楼层文字").style.color = "#ffffff";
 
             }else {
-                document.getElementById('A').className = "c1";
+                document.getElementById('A').className = "floorChoice1 loucengUI";
                 document.getElementById("A").style.background ='#444444';
                 document.getElementById("2f").style.display = "none";
                 document.getElementById("3f").style.display = "none";
@@ -2875,10 +2875,11 @@ var help =  document.getElementById("help1");
                 },1000);
                 setTimeout(function () {
                     orbitControls.maxPolarAngle = Math.PI / 2;
-                    document.getElementById("B").style.display = "";
+                    // console.log(document.getElementById("B").style.display);
+                    document.getElementById("B").style.display = 'block';
                 },2000);
                 setTimeout(function () {
-                    document.getElementById("help123").style.display = "";
+                    document.getElementById("help123").style.display = "block";
                 },3000);
 
                 document.getElementById('loadingBackground' ).style.display = 'none';
@@ -2886,10 +2887,10 @@ var help =  document.getElementById("help1");
                 document.getElementById('loadingText').style.display = 'none';
                // document.getElementById('load5').style.transform = 'translateY(100%)';
                 //document.getElementById('load6').style.transform = 'translateY(-100%)';
-                document.getElementById("1").style.display = "";
-                document.getElementById("2").style.display = "";
-                document.getElementById("3").style.display = "";
-                document.getElementById("A").style.display = "";
+                document.getElementById("1").style.display = "block";
+                document.getElementById("2").style.display = "block";
+                document.getElementById("3").style.display = "block";
+                document.getElementById("A").style.display = "block";
 
 
             }
@@ -2901,11 +2902,11 @@ var help =  document.getElementById("help1");
             setTimeout(function () {
                 document.getElementById('pano').style.display='none';
                 document.getElementById('pano').innerHTML='';
-                document.getElementById('A').style.display = '';
-                document.getElementById('B').style.display = '';
-                document.getElementById('1').style.display = '';
-                document.getElementById('2').style.display = '';
-                document.getElementById('3').style.display = '';
+                document.getElementById('A').style.display = 'block';
+                document.getElementById('B').style.display = 'block';
+                document.getElementById('1').style.display = 'block';
+                document.getElementById('2').style.display = 'block';
+                document.getElementById('3').style.display = 'block';
                 tween1 = new TWEEN.Tween( camera.position).to(p2, 1500).easing(TWEEN.Easing.Sinusoidal.InOut).start();
                 tween2 = new TWEEN.Tween(orbitControls.center).to({x:0, y:0, z:-200},1500).easing(TWEEN.Easing.Sinusoidal.InOut).start();
             },900);

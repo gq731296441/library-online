@@ -47,7 +47,7 @@
 
     </style>
     <link href="css/button.css" rel="stylesheet" type="text/css" media="all"/>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="all"/>
 
 </head>
 <body>
@@ -183,83 +183,89 @@
 
 
 
+<!-- 导航栏 -->
+<div  id="B"  class="navBar">
 
-<div  id="B" style="top:20px;left:20%;width:1000px;height:40px;position: absolute;display: none;opacity: 0.8; background:#444444">
-
-
-    <div id="1" class="c1" style="right: 0;top:0;position: absolute; display: none; background:#444444" onclick="start()" >
+    <div id="1" class="floorChoice1 navFont" onclick="start()" >
         <div style="left: 0;position: absolute; ">
-            <img  id="旋转" src="assets/texture/xuanzhuan_off.png" style="max-height: 2.5em;left: 10px;position: absolute;opacity: 1;" title="旋转">
-            <p id="旋转文字" style="left: 55px;bottom:-7px;position: relative;display: inline;opacity: 1;color: #cccccc;cursor: default">自动旋转</p>
+            <img  id="旋转" src="assets/texture/xuanzhuan_off.png" title="旋转">
+            <p id="旋转文字">自动旋转</p>
         </div>
     </div>
-    <div id="2" class="c1" style="right: 151px;top:0;position: absolute; display: none; background:#444444"  onclick="sanwei()">
+
+    <div id="2" class="floorChoice1 pingMianTu"  onclick="sanwei()">
         <div style="left: 0;position: absolute; ">
-            <img id="3d" src="assets/texture/pingmian.png" style="max-height: 2.5em;left: 15px;position: relative">
-            <p  id="三维文字" style="left: 25px;bottom:15px;position: relative;display: inline;color: #cccccc;cursor: default">平面图</p>
+            <img id="3d" src="assets/texture/pingmian.png">
+            <p  id="三维文字">平面图</p>
         </div>
     </div>
-    <div id="3" class="c1" style="right: 302px;top:0;position: absolute; display: none; background:#444444" onclick="qiangti()">
+
+    <div id="3" class="floorChoice1 qiangti" onclick="qiangti()">
         <div style="left: 0;position: absolute;">
-            <img id="隐藏墙体" src="assets/texture/wall_on.png" style="max-height: 2.5em; left: 10px;position: relative" >
-            <p id="墙体文字" style="left: 23px;bottom: 15px;position: relative;display: inline;color: #cccccc;cursor: default">隐藏墙体</p>
+            <img id="隐藏墙体" src="assets/texture/wall_on.png">
+            <p id="墙体文字">隐藏墙体</p>
         </div>
     </div>
-    <div id="A" class="c1" style="right: 453px;top:0;position: absolute; display: none; background:#444444"  onclick="loucengUI()">
+
+    <div id="A" class="floorChoice1 loucengUI"  onclick="loucengUI()">
         <div style="left: 0;position: absolute;">
-            <img id="floorChoice" src="assets/texture/ALL.png" style="max-height: 2em;left: 8px;top: 5px; position: relative ">
-            <p  id="楼层文字" style="left: 24px;bottom:8px;position: relative;display: inline;color: #cccccc;cursor: default">楼层选择</p>
+            <img id="floorChoice" src="assets/texture/ALL.png">
+            <p  id="楼层文字">楼层选择</p>
         </div>
-        <div  id="all" class="c2" style="left: 0;top:50px;position: absolute;display: none;  background:#c0c0c0" onclick="ALL()">
+        
+        <div  id="all" class="c2 All" onclick="ALL()">
 
             <div style="left:0 ;position: absolute;">
-                <img  id="8" src="assets/texture/all_off.png" style="max-height: 3em ;left: 50px;position: absolute; " >
+                <img  id="8" src="assets/texture/all_off.png" >
             </div>
 
         </div>
-        <div id="2f" class="c2" style="left: 0;top:82px;position: absolute;display: none; background:#c0c0c0" onclick="floor2()">
+
+        <div id="2f" class="c2 floor2" onclick="floor2()">
             <div  style="left:0 ;position: absolute;">
-                <img  id="4" src="assets/texture/2f_off.png" style="max-height: 3em ;left: 50px;position: absolute; " >
+                <img  id="4" src="assets/texture/2f_off.png" >
             </div>
         </div>
-        <div id="3f" class="c2" style="left: 0;top:114px;position: absolute; display: none; background:#c0c0c0" onclick="floor3()">
+
+        <div id="3f" class="c2 floor3" onclick="floor3()">
             <div style="left:0 ;position: absolute;">
-                <img id="5" src="assets/texture/3f_off.png" style="max-height: 3em;left: 50px;position: absolute;" >
+                <img id="5" src="assets/texture/3f_off.png">
             </div>
         </div>
-        <div id="4f" class="c2" style="left: 0;top:146px;position: absolute; display: none; background:#c0c0c0" onclick="floor4()">
+        <div id="4f" class="c2 floor4" onclick="floor4()">
             <div style="left:0 ;position: absolute;">
-                <img id="6" src="assets/texture/4f_off.png" style="max-height: 3em;left: 50px;position: absolute;" >
+                <img id="6" src="assets/texture/4f_off.png">
             </div>
         </div>
-        <div  id="5f" class="c2" style="left: 0;top:178px;position: absolute;display: none;  background:#c0c0c0" onclick="floor5()">
+        <div  id="5f" class="c2 floor5" onclick="floor5()">
 
             <div style="left:0 ;position: absolute;">
-                <img id="7" src="assets/texture/5f_off.png" style="max-height: 3em;left:50px;position: absolute; " >
+                <img id="7" src="assets/texture/5f_off.png" >
             </div>
         </div>
     </div>
 
-    <div id="9" class="c1" style="left: 0;top:0;position: absolute;  background:#444444"   onclick="OpenHelp()">
+    <div id="9" class="floorChoice1 help" onclick="OpenHelp()">
         <div style="left: 0;position: absolute; ">
-            <p  id="帮助" style="left: 12px;bottom:-10px;position: relative;display: inline;color: #cccccc;cursor: default" onclick="OpenHelp()">南京邮电大学图书馆</p>
+            <p  id="帮助"  onclick="OpenHelp()">南京邮电大学图书馆</p>
         </div>
-        <img  src="assets/texture/help.png" style="max-height: 1.5em;left: 105%;top:20%;position:absolute;display: inline; " onclick="OpenHelp()">
+        <img  src="assets/texture/help.png" onclick="OpenHelp()">
     </div>
 
 </div>
 
-
-<div id="10" class="c1" style=" right: 50px;bottom: 35px;position: absolute;opacity: 0.8; width:250px;height: 20px; border-radius:5px;text-align: center;font-size:14px;background:#090909" onclick="">
-        <p  id="信息" style="position: relative;display: inline;color: #cccccc;cursor: default; ">南京邮电大学数字媒体研究中心</p>
+<!-- 右下角角标 -->
+<div id="10" class="floorChoice1 cornerInfo" onclick="">
+        <p  id="信息">南京邮电大学图书馆</p>
 </div>
 
-<div id="help123" style="width:40%;height:35%;left:30%;bottom:35%; border-radius:10px; position: absolute;background :#c7c7c7;opacity: 0.8;display: none" >
-    <img  src="assets/texture/help1.png" style="position: absolute;max-height: 100% ;left:11%;bottom: 0"  >
-    <img  src="assets/texture/closehelp.png" style="position: absolute;max-height: 15% ;right:3%;top: 5%"  onclick="CloseHelp()" >
+<!-- 帮助图标 -->
+<div id="help123" class="helpIcon">
+    <img  src="assets/texture/help1.png" class="helpInfo" >
+    <img  src="assets/texture/closehelp.png" class="closeHelp" onclick="CloseHelp()" >
 </div>
 
-
+<!-- 渲染div -->
 <div id="WebGL-output">
 </div>
 

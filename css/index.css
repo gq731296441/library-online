@@ -1,0 +1,223 @@
+.navBar {
+  position: absolute;
+  top: 20px;
+  left: 20%;
+  width: 1000px;
+  height: 40px;
+  display: none;
+  opacity: 0.8;
+  background: #444444;
+}
+.navBar .navFont {
+  right: 0;
+  top: 0;
+  position: absolute;
+  display: none;
+  background: #444444;
+}
+.navBar .navFont img {
+  max-height: 2.5em;
+  left: 10px;
+  position: absolute;
+  opacity: 1;
+}
+.navBar .navFont p {
+  left: 55px;
+  bottom: -7px;
+  position: relative;
+  display: inline;
+  opacity: 1;
+  color: #cccccc;
+  cursor: default;
+}
+.navBar .pingMianTu {
+  right: 151px;
+  top: 0;
+  position: absolute;
+  display: none;
+  background: #444444;
+}
+.navBar .pingMianTu img {
+  max-height: 2.5em;
+  left: 15px;
+  position: relative;
+}
+.navBar .pingMianTu p {
+  left: 25px;
+  bottom: 15px;
+  position: relative;
+  display: inline;
+  color: #cccccc;
+  cursor: default;
+}
+.navBar .qiangti {
+  right: 302px;
+  top: 0;
+  position: absolute;
+  display: none;
+  background: #444444;
+}
+.navBar .qiangti img {
+  max-height: 2.5em;
+  left: 10px;
+  position: relative;
+}
+.navBar .qiangti p {
+  left: 23px;
+  bottom: 15px;
+  position: relative;
+  display: inline;
+  color: #cccccc;
+  cursor: default;
+}
+.navBar .loucengUI {
+  right: 453px;
+  top: 0;
+  position: absolute;
+  display: none;
+  background: #444444;
+}
+.navBar .loucengUI img {
+  max-height: 2em;
+  left: 8px;
+  top: 5px;
+  position: relative;
+}
+.navBar .loucengUI p {
+  left: 24px;
+  bottom: 8px;
+  position: relative;
+  display: inline;
+  color: #cccccc;
+  cursor: default;
+}
+.navBar .loucengUI .All {
+  left: 0;
+  top: 50px;
+  position: absolute;
+  display: none;
+  background: #c0c0c0;
+}
+.navBar .loucengUI .All img {
+  max-height: 3em;
+  top: 0;
+  left: 50px;
+  position: absolute;
+}
+.navBar .loucengUI .floor2 {
+  left: 0;
+  top: 82px;
+  position: absolute;
+  display: none;
+  background: #c0c0c0;
+}
+.navBar .loucengUI .floor2 img {
+  max-height: 3em;
+  top: 0;
+  left: 50px;
+  position: absolute;
+}
+.navBar .loucengUI .floor3 {
+  left: 0;
+  top: 114px;
+  position: absolute;
+  display: none;
+  background: #c0c0c0;
+}
+.navBar .loucengUI .floor3 img {
+  max-height: 3em;
+  top: 0;
+  left: 50px;
+  position: absolute;
+}
+.navBar .loucengUI .floor4 {
+  left: 0;
+  top: 146px;
+  position: absolute;
+  display: none;
+  background: #c0c0c0;
+}
+.navBar .loucengUI .floor4 img {
+  max-height: 3em;
+  top: 0;
+  left: 50px;
+  position: absolute;
+}
+.navBar .loucengUI .floor5 {
+  left: 0;
+  top: 178px;
+  position: absolute;
+  display: none;
+  background: #c0c0c0;
+}
+.navBar .loucengUI .floor5 img {
+  max-height: 3em;
+  top: 0;
+  left: 50px;
+  position: absolute;
+}
+.navBar .help {
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: #444444;
+}
+.navBar .help p {
+  left: 12px;
+  bottom: -10px;
+  position: relative;
+  display: inline;
+  color: #cccccc;
+  cursor: default;
+}
+.navBar .help img {
+  max-height: 1.5em;
+  left: 105%;
+  top: 20%;
+  position: absolute;
+  display: inline;
+}
+.cornerInfo {
+  right: 50px;
+  bottom: 35px;
+  position: absolute;
+  opacity: 0.8;
+  width: 250px;
+  height: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  background: black;
+}
+.cornerInfo p {
+  position: relative;
+  display: inline;
+  color: #cccccc;
+  cursor: default;
+}
+.helpIcon {
+  width: 40%;
+  height: 35%;
+  left: 30%;
+  bottom: 35%;
+  border-radius: 10px;
+  position: absolute;
+  background: #c7c7c7;
+  opacity: 0.8;
+  display: none;
+}
+.helpIcon .helpInfo {
+  position: absolute;
+  max-height: 100% ;
+  left: 11%;
+  bottom: 0;
+}
+.helpIcon .closeHelp {
+  position: absolute;
+  max-height: 15% ;
+  right: 3%;
+  top: 5%;
+}
+.helpIcon .closeHelp:hover {
+  opacity: 0.3;
+}

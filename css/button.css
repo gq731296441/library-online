@@ -1,4 +1,4 @@
-.c1
+.floorChoice1
 {
     width:150px;
     height:40px;
@@ -7,7 +7,8 @@
     -webkit-transition:height 0.5s; /* Safari and Chrome */
     -o-transition:height 0.5s; /* Opera */
 }
-.c1:hover
+
+.floorChoice1:hover
 {
 
     opacity: 0.6;
@@ -23,17 +24,19 @@
     -webkit-transition:width 0.5s; /* Safari and Chrome */
     -o-transition:width 0.5s; /* Opera */
 }
+
 .c2:hover
 {
     opacity: 0.6;
 }
-.c3
+
+.floorChoice3
 {
     width:150px;
     height:50px;
 
 }
-.c3:hover
+.floorChoice3:hover
 {
     height:210px;
 
