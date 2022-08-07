@@ -47,9 +47,222 @@
 
     </style>
     <link href="css/button.css" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/index.css">
 
 </head>
 <body>
+
+
+
+<div id="pano" style="width:100%;height:100%; display : none ;">
+    <noscript><table style="width:100%;height:100%;"><tr style="vertical-align:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
+</div>
+
+
+<div  id="load4" style="position: absolute;right: 0;bottom:0;width:100%;height: 100%" >
+    <img  src="assets/texture/library.png" style="width:100%;height:100%;position: absolute;right:0;bottom: 0;" >
+</div>
+
+<div id="loadUI">
+<div  id="load5" style="position: absolute;right: 0;top:0;width:200px;height:50px" >
+    <img  src="assets/texture/logo1.png" style="width:300px;height:80px;position: absolute;right:60px;top: 30px;" >
+</div>
+<div id="load2"  style="position: absolute;left: 0;bottom:0;background: #444444 ;width: 500px;height: 100%;display: none ">
+    <img   src="assets/texture/图书馆.png" style="position: absolute;max-height: 400px ;left:30%;bottom: 30%;" >
+</div>
+
+
+
+<div id="loadingBackground" style="width:200px;height:2px;left:45%;bottom:30%; position: absolute;background :#c7c7c7;">
+
+    <div id="loading" class="abc" style="width:1%;height:2px;left: 0;bottom:0; position: absolute;background :#fff35d"></div>
+
+    <p id="loadingText" class="loadingText" style="left: 40px;bottom:-45px;position: absolute;color: #ffffff;font-size: 50px;cursor: default" onclick="startbutton()" ></p>
+</div>
+
+</div>
+
+
+
+
+<div  style="position: absolute;right: -15%;top:5%;">
+    <img id="全景退出" src="assets/texture/panoback.png" style="width: 40%;height: 15% ;right:0;position:relative;display: none"  onclick="
+    document.getElementById('WebGL-output').style.display ='';
+    document.getElementById('全景退出').style.display ='none';
+    showALL();
+    showtag();
+    panoBack()">
+</div>
+
+<div id="p1" class="annotation" style="display: none"></div>
+<div id="p2" class="annotation2" style="display: none"></div>
+<div id="p3" class="annotation3" style="display: none"></div>
+<div id="p4" class="annotation4" style="display: none"></div>
+<div id="p5" class="annotation5" style="display: none"></div>
+<div id="p6" class="annotation6" style="display: none"></div>
+<div id="p7" class="annotation7" style="display: none"></div>
+<div id="p8" class="annotation8" style="display: none"></div>
+<div id="p9" class="annotation9" style="display: none"></div>
+<div id="p10" class="annotation10" style="display: none"></div>
+<div id="p11" class="annotation11" style="display: none"></div>
+
+
+<div id="2ftag" style="display: none;">
+    <div id="tag1" class="tag" style="top: 500px;left: 500px ; position: absolute;" onclick="Tag()" onmouseover="big()" onmouseout="re()">
+         <img id="t1" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+    <div id="tag2" class="tag2" style="top: 500px;left: 500px ;position: absolute;" onclick="Tag2()" onmouseover="big2()" onmouseout="re2()">
+        <img id="t2" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+    <div id="tag3" class="tag3" style="top: 500px;left: 500px ; position: absolute;" onclick="Tag3()" onmouseover="big3()" onmouseout="re3()">
+        <img id="t3" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+    <div id="tag4" class="tag4" style="top: 500px;left: 500px ; position: absolute;" onclick="Tag4()" onmouseover="big4()" onmouseout="re4()">
+     <img id="t4" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+    <div id="tag5" class="tag5" style="top: 500px;left: 500px ; ;position: absolute;" onclick="Tag5()" onmouseover="big5()" onmouseout="re5()">
+     <img id="t5" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+    <div id="tag6" class="tag6" style="top: 500px;left: 500px ; position: absolute;" onclick="Tag6()" onmouseover="big6()" onmouseout="re6()">
+        <img id="t6" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+    <div id="tag7" class="tag7" style="top: 500px;left: 500px ;position: absolute;" onclick="Tag7()" onmouseover="big7()" onmouseout="re7()">
+         <img id="t7" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+    <div id="tag8" class="tag8" style="top: 500px;left: 500px ; position: absolute;" onclick="Tag8()" onmouseover="big8()" onmouseout="re8()">
+        <img id="t8" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+</div>
+
+<div id="3ftag" style="display: none">
+    <div id="tag9" class="tag9" style="top: 500px;left: 500px ;position: absolute;" onclick="Tag9()" onmouseover="big9()" onmouseout="re9()">
+        <img id="t9" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+    <div id="tag10" class="tag10" style="top: 500px;left: 500px ;position: absolute;" onclick="Tag10()" onmouseover="big10()" onmouseout="re10()">
+        <img id="t10" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+    <div id="tag11" class="tag11" style="top: 500px;left: 500px ;position: absolute;" onclick="Tag11()" onmouseover="big11()" onmouseout="re11()">
+        <img id="t11" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+    <div id="tag12" class="tag12" style="top: 500px;left: 500px ;position: absolute;" onclick="Tag12()" onmouseover="big12()" onmouseout="re12()">
+        <img id="t12" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+</div>
+
+<div id="4ftag" style="display: none">
+    <div id="tag13" class="tag13" style="top: 500px;left: 500px ;position: absolute;" onclick="Tag13()" onmouseover="big13()" onmouseout="re13()">
+        <img id="t13" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+    <div id="tag14" class="tag14" style="top: 500px;left: 500px ;position: absolute;" onclick="Tag14()" onmouseover="big14()" onmouseout="re14()">
+        <img id="t14" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+    <div id="tag15" class="tag15" style="top: 500px;left: 500px ;position: absolute;" onclick="Tag15()" onmouseover="big15()" onmouseout="re15()">
+        <img id="t15" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+    <div id="tag16" class="tag16" style="top: 500px;left: 500px ;position: absolute;" onclick="Tag16()" onmouseover="big16()" onmouseout="re16()">
+        <img id="t16" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+</div>
+
+
+<div id="5ftag" style="display: none">
+    <div id="tag17" class="tag17" style="top: 500px;left: 500px ;position: absolute;" onclick="Tag17()" onmouseover="big17()" onmouseout="re17()">
+        <img id="t17" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+    <div id="tag18" class="tag18" style="top: 500px;left: 500px ;position: absolute;" onclick="Tag18()" onmouseover="big18()" onmouseout="re18()">
+        <img id="t18" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+    <div id="tag19" class="tag19" style="top: 500px;left: 500px ;position: absolute;" onclick="Tag19()" onmouseover="big19()" onmouseout="re19()">
+        <img id="t19" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+    <div id="tag20" class="tag20" style="top: 500px;left: 500px ;position: absolute;" onclick="Tag20()" onmouseover="big20()" onmouseout="re20()">
+        <img id="t20" src="assets/texture/tag.png" style="max-height: 2em;left: -20px;bottom:0 ;position: absolute;" >
+    </div>
+</div>
+
+
+
+
+
+<div  id="B" style="top:20px;left:20%;width:1000px;height:40px;position: absolute;display: none;opacity: 0.8; background:#444444">
+
+
+    <div id="1" class="c1" style="right: 0;top:0;position: absolute; display: none; background:#444444" onclick="start()" >
+        <div style="left: 0;position: absolute; ">
+            <img  id="旋转" src="assets/texture/xuanzhuan_off.png" style="max-height: 2.5em;left: 10px;position: absolute;opacity: 1;" title="旋转">
+            <p id="旋转文字" style="left: 55px;bottom:-7px;position: relative;display: inline;opacity: 1;color: #cccccc;cursor: default">自动旋转</p>
+        </div>
+    </div>
+    <div id="2" class="c1" style="right: 151px;top:0;position: absolute; display: none; background:#444444"  onclick="sanwei()">
+        <div style="left: 0;position: absolute; ">
+            <img id="3d" src="assets/texture/pingmian.png" style="max-height: 2.5em;left: 15px;position: relative">
+            <p  id="三维文字" style="left: 25px;bottom:15px;position: relative;display: inline;color: #cccccc;cursor: default">平面图</p>
+        </div>
+    </div>
+    <div id="3" class="c1" style="right: 302px;top:0;position: absolute; display: none; background:#444444" onclick="qiangti()">
+        <div style="left: 0;position: absolute;">
+            <img id="隐藏墙体" src="assets/texture/wall_on.png" style="max-height: 2.5em; left: 10px;position: relative" >
+            <p id="墙体文字" style="left: 23px;bottom: 15px;position: relative;display: inline;color: #cccccc;cursor: default">隐藏墙体</p>
+        </div>
+    </div>
+    <div id="A" class="c1" style="right: 453px;top:0;position: absolute; display: none; background:#444444"  onclick="loucengUI()">
+        <div style="left: 0;position: absolute;">
+            <img id="floorChoice" src="assets/texture/ALL.png" style="max-height: 2em;left: 8px;top: 5px; position: relative ">
+            <p  id="楼层文字" style="left: 24px;bottom:8px;position: relative;display: inline;color: #cccccc;cursor: default">楼层选择</p>
+        </div>
+        <div  id="all" class="c2" style="left: 0;top:50px;position: absolute;display: none;  background:#c0c0c0" onclick="ALL()">
+
+            <div style="left:0 ;position: absolute;">
+                <img  id="8" src="assets/texture/all_off.png" style="max-height: 3em ;left: 50px;position: absolute; " >
+            </div>
+
+        </div>
+        <div id="2f" class="c2" style="left: 0;top:82px;position: absolute;display: none; background:#c0c0c0" onclick="floor2()">
+            <div  style="left:0 ;position: absolute;">
+                <img  id="4" src="assets/texture/2f_off.png" style="max-height: 3em ;left: 50px;position: absolute; " >
+            </div>
+        </div>
+        <div id="3f" class="c2" style="left: 0;top:114px;position: absolute; display: none; background:#c0c0c0" onclick="floor3()">
+            <div style="left:0 ;position: absolute;">
+                <img id="5" src="assets/texture/3f_off.png" style="max-height: 3em;left: 50px;position: absolute;" >
+            </div>
+        </div>
+        <div id="4f" class="c2" style="left: 0;top:146px;position: absolute; display: none; background:#c0c0c0" onclick="floor4()">
+            <div style="left:0 ;position: absolute;">
+                <img id="6" src="assets/texture/4f_off.png" style="max-height: 3em;left: 50px;position: absolute;" >
+            </div>
+        </div>
+        <div  id="5f" class="c2" style="left: 0;top:178px;position: absolute;display: none;  background:#c0c0c0" onclick="floor5()">
+
+            <div style="left:0 ;position: absolute;">
+                <img id="7" src="assets/texture/5f_off.png" style="max-height: 3em;left:50px;position: absolute; " >
+            </div>
+        </div>
+    </div>
+
+    <div id="9" class="c1" style="left: 0;top:0;position: absolute;  background:#444444"   onclick="OpenHelp()">
+        <div style="left: 0;position: absolute; ">
+            <p  id="帮助" style="left: 12px;bottom:-10px;position: relative;display: inline;color: #cccccc;cursor: default" onclick="OpenHelp()">南京邮电大学图书馆</p>
+        </div>
+        <img  src="assets/texture/help.png" style="max-height: 1.5em;left: 105%;top:20%;position:absolute;display: inline; " onclick="OpenHelp()">
+    </div>
+
+</div>
+
+
+<div id="10" class="c1" style=" right: 50px;bottom: 35px;position: absolute;opacity: 0.8; width:250px;height: 20px; border-radius:5px;text-align: center;font-size:14px;background:#090909" onclick="">
+        <p  id="信息" style="position: relative;display: inline;color: #cccccc;cursor: default; ">南京邮电大学数字媒体研究中心</p>
+</div>
+
+<div id="help123" style="width:40%;height:35%;left:30%;bottom:35%; border-radius:10px; position: absolute;background :#c7c7c7;opacity: 0.8;display: none" >
+    <img  src="assets/texture/help1.png" style="position: absolute;max-height: 100% ;left:11%;bottom: 0"  >
+    <img  src="assets/texture/closehelp.png" style="position: absolute;max-height: 15% ;right:3%;top: 5%"  onclick="CloseHelp()" >
+</div>
+
+
+<div id="WebGL-output">
+</div>
+
 
 
 <script src="lib/three.js"></script>

@@ -1,0 +1,584 @@
+.c1
+{
+    width:150px;
+    height:40px;
+    transition:height 0.5s;
+    -moz-transition:height 0.5s; /* Firefox 4 */
+    -webkit-transition:height 0.5s; /* Safari and Chrome */
+    -o-transition:height 0.5s; /* Opera */
+}
+.c1:hover
+{
+
+    opacity: 0.6;
+}
+
+.c2
+{
+    width:150px;
+    height:30px;
+    opacity: 1;
+    transition:width 0.5s;
+    -moz-transition:width 0.5s; /* Firefox 4 */
+    -webkit-transition:width 0.5s; /* Safari and Chrome */
+    -o-transition:width 0.5s; /* Opera */
+}
+.c2:hover
+{
+    opacity: 0.6;
+}
+.c3
+{
+    width:150px;
+    height:50px;
+
+}
+.c3:hover
+{
+    height:210px;
+
+}
+canvas {
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+
+.annotation {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+
+
+}
+.annotation:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: -10px;
+    -webkit-transform: rotate(-45deg);
+    top: -60px;
+    left: -10px;
+    width:200px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.annotation:after {
+    content: '人文科学图书阅览室';
+    position: absolute;
+    top: -160px;
+    left: 150px;
+    -webkit-transform: rotate(0deg);
+    width:120px;
+    height: 20px;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    transition: opacity .5s;
+}
+.annotation2 {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+
+
+}
+.annotation2:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: -10px;
+    -webkit-transform: rotate(-45deg);
+    top: -60px;
+    left: -10px;
+    width:200px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.annotation2:after {
+    content: '教学参考阅览室';
+    position: absolute;
+    top: -160px;
+    left: 150px;
+    -webkit-transform: rotate(0deg);
+    width:100px;
+    height: 20px;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    transition: opacity .5s;
+}
+
+.annotation3 {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+
+
+}
+.annotation3:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: -10px;
+    -webkit-transform: rotate(45deg);
+    top: -60px;
+    left: -160px;
+    width:200px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.annotation3:after {
+    content: '外文图书阅览室';
+    position: absolute;
+    top: -160px;
+    left: -240px;
+    -webkit-transform: rotate(0deg);
+    width:100px;
+    height: 20px;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    transition: opacity .5s;
+}
+.annotation4 {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+
+
+}
+.annotation4:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: -10px;
+    -webkit-transform: rotate(45deg);
+    top: -60px;
+    left: -160px;
+    width:200px;
+    height:3px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.annotation4:after {
+    content: '社会科学图书阅览室';
+    position: absolute;
+    top: -160px;
+    left: -240px;
+    -webkit-transform: rotate(0deg);
+    width:120px;
+    height: 20px;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    transition: opacity .5s;
+}
+.annotation5 {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+
+
+}
+.annotation5:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: -10px;
+    -webkit-transform: rotate(-45deg);
+    top: -60px;
+    left: -10px;
+    width:200px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.annotation5:after {
+    content: '自然科学图书阅览室';
+    position: absolute;
+    top: -160px;
+    left: 150px;
+    -webkit-transform: rotate(0deg);
+    width:120px;
+    height: 20px;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    transition: opacity .5s;
+}
+.annotation6 {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+
+
+}
+.annotation6:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: -10px;
+    -webkit-transform: rotate(-45deg);
+    top: -60px;
+    left: -10px;
+    width:200px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.annotation6:after {
+    content: '样本图书阅览室';
+    position: absolute;
+    top: -160px;
+    left: 150px;
+    -webkit-transform: rotate(0deg);
+    width:120px;
+    height: 20px;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    transition: opacity .5s;
+}
+.annotation7 {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+
+
+}
+.annotation7:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: -10px;
+    -webkit-transform: rotate(120deg);
+    top: -80px;
+    left:-32px;
+    width:200px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.annotation7:after {
+    content: '多功能报告厅';
+    position: absolute;
+    top: -195px;
+    left: 106px;
+    -webkit-transform: rotate(0deg);
+
+    width:100px;
+    height: 20px;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+
+    line-height: 18px;
+    text-align: center;
+    transition: opacity .5s;
+}
+.annotation8 {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+
+
+}
+.annotation8:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: -10px;
+    -webkit-transform: rotate(45deg);
+    top: -60px;
+    left: -160px;
+    width:200px;
+    height:3px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.annotation8:after {
+    content: '报刊图书阅览室';
+    position: absolute;
+    top: -160px;
+    left: -240px;
+    -webkit-transform: rotate(0deg);
+    width:100px;
+    height: 20px;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    transition: opacity .5s;
+}
+.annotation9 {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+
+
+}
+.annotation9:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: -10px;
+    -webkit-transform: rotate(45deg);
+    top: -60px;
+    left: -160px;
+    width:200px;
+    height:3px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.annotation9:after {
+    content: '学生阅览室';
+    position: absolute;
+    top: -160px;
+    left: -240px;
+    -webkit-transform: rotate(0deg);
+    width:100px;
+    height: 20px;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    transition: opacity .5s;
+}
+
+.annotation10{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+
+
+}
+.annotation10:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: -10px;
+    -webkit-transform: rotate(-45deg);
+    top: -60px;
+    left: -10px;
+    width:200px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.annotation10:after {
+    content: '人文艺术阅览室';
+    position: absolute;
+    top: -160px;
+    left: 150px;
+    -webkit-transform: rotate(0deg);
+    width:120px;
+    height: 20px;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    transition: opacity .5s;
+}
+.annotation11{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+
+
+}
+.annotation11:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: -10px;
+    -webkit-transform: rotate(-45deg);
+    top: -60px;
+    left: -10px;
+    width:200px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.annotation11:after {
+    content: '合订本期刊阅览室';
+    position: absolute;
+    top: -160px;
+    left: 150px;
+    -webkit-transform: rotate(0deg);
+    width:120px;
+    height: 20px;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    transition: opacity .5s;
+}
+.tag {
+}
+.tag2 {
+}
+.tag3 {
+}
+.tag4 {
+}
+.tag5 {
+}
+.tag6 {
+}
+.tag7 {
+}
+.tag8 {
+}
+.tag9 {
+}
+.tag10 {
+}
+.tag11 {
+}
+.tag12 {
+}
+.tag13 {
+}
+.tag14 {
+}
+.tag15 {
+}
+.tag16 {
+}
+.tag17 {
+}
+.tag18 {
+}
+.tag19 {
+}
+.tag20{
+}
+.loadingText{
+    transition:height 0.5s;
+    -moz-transition:height 0.5s; /* Firefox 4 */
+    -webkit-transition:height 0.5s; /* Safari and Chrome */
+    -o-transition:height 0.5s; /* Opera */
+}
+.loadingText:hover{
+   opacity: 0.5
+}
+
