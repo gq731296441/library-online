@@ -1,13 +1,13 @@
 # library-online
-在线三维图书馆的Web交互
+
+在线三维图书馆的Web交互  
 
 
 
-打开方式：
-
-**请通过目录中的testingserver.exe 启动该项目，直接打开index.html无法调取模型资源** 
+打开方式：**请通过目录中的testingserver.exe 启动该项目，直接打开index.html无法调取模型资源**   
 
 
+项目展示：  
 
 ## 加载页面
 ![主界面](https://github.com/gq731296441/library-online/blob/bcea329785db8d2692c76e5f7e2155420db18681/img/loading.png)  
