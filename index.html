@@ -1,12 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>library</title>
+
+    <style>
+        @media only screen and (min-device-width:800px) { html { overflow:hidden; } }
+        html { height:100%; }
+        body { height:100%; overflow:hidden; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#FFFFFF; background-color:#000000; }
+
+        .test{
+            margin-top:50px;
+            transition: opacity 4s;
+            -moz-transition: opacity 4s;
+            -webkit-transition: opacity 4s;
+            -o-transition:opacity 4s
+        }
+
+        @-webkit-keyframes move {
+             from {opacity:1;}
+             to {opacity:0;}
+         }
+        @-webkit-keyframes move2 {
+            from {left:0;}
+            to {left:-600px;}
+        }
+        @-webkit-keyframes move3 {
+            from {right:0;}
+            to {right:-400px;}
+        }
+        @-webkit-keyframes move4 {
+            from {bottom:0;}
+            to {bottom:-100px;}
+        }
+        @-webkit-keyframes pano {
+            from {opacity:0.5;}
+            to {opacity:1;}
+        }
+        @-webkit-keyframes panoback {
+            from {opacity:1;}
+            to {opacity:0;}
+        }
+
+
+    </style>
+    <link href="css/button.css" rel="stylesheet" type="text/css" media="all"/>
+
 </head>
 <body>
-    
+
+
+<script src="lib/three.js"></script>
+<script src="lib/stats.js"></script>
+<script src="lib/dat.gui.js"></script>
+<script src="lib/OrbitControls.js"></script>
+<script src="lib/GLTFLoader.js"></script>
+<script src="vtour/tour.js"></script>
+<script src="lib/tween.min.js"></script>
+<script src="src/index.js"></script>
+
+
+
 </body>
 </html>
